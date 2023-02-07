@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#!/bin/bash
+
+result=$(echo "$1" | bc)
+echo "The result of the do-op is $result"
