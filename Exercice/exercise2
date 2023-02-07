@@ -1,0 +1,13 @@
+#!/bin/bash
+
+args=("$@")
+
+printf "The arguments are ["
+for arg in "${args[@]}"; do
+    if [[ $arg =~ ^[0-9]+$ ]]; then
+        printf "$arg,"
+        else
+        printf "\"$arg\", "
+        fi
+    done
+printf "\b]\n"
